@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST</title>
+   
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        display: flex;
+        justify-content: center;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: xxx-large;
+        font-size-adjust: inherit;
+    }
+
+    h3 {
+        text-align: center;
+        transform: translate(0%, 30%);
+        padding: 20px;
+        border-bottom-left-radius: 32px;
+        border-bottom-right-radius: 32px;
+    }
+
+    img {
+        width: 1450px;
+        height: 500px;
+        object-fit: cover;
+        position: relative;
+    }
+    /* Contest */
+
+    .contest {
+        z-index: 40;
+        position: absolute;
+        background-color: #43575ee3;
+        color: whitesmoke;
+        top: 415px;
+        right: 70px;
+        padding: px;
+        width: 500px;
+        height: 250px ;
+        border-radius: 22px;
+    }
+
+    .contest h1 {
+        top: 30px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: xxx-large;
+        padding: 10px;
+        font-weight: 900;
+        text-size-adjust: 900px;
+    }
+
+    .contest h3 {
+        background-color: #065163;
+        width: 500px;
+        height: 90px;
+        font-size: x-large;
+    }
+
+    .contest span {
+        color: rgb(32, 240, 198);
+        font-weight: bold;
+        
+    }
+
+    .contest-content {
+        text-align: left;
+        width: 500px;
+    }
+    /* Idea */
+
+    .ideas {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+        background-color: lightblue;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    i {
+        color: rgb(3, 124, 3);
+    }
+
+    .idea-blocks {
+        max-width: 31.5%;
+        align-items: center;
+        color: #fff;
+        padding: 50px;
+        border-radius: 32px;
+        margin: 10px;
+        background-size: cover;
+    }
+
+    #block-1 {
+        background-image: url('images/GEN AI.jpeg');
+    }
+
+    #block-2 {
+        background-image: url('images/Ai.jpeg');
+        padding: 37px;
+    }
+
+    #block-3 {
+        background-image: url('images/dat.jpeg');
+        padding: 43.9px;
+    }
+
+    #block-4 {
+        background-image: url('images/cloud.jpeg');
+    }
+
+    #block-5 {
+        background-image: url('images/problem.jpeg');
+        padding: 41.8px;
+    }
+
+    #block-6 {
+        background-image: url('images/visionary.jpeg');
+    }
+
+   /* Chances */
+
+    .chances {
+        display: flex;
+        position: relative;
+        background-image: linear-gradient(to right ,  #004366 ,  #03a982 );
+        height: 500px;
+    }
+
+    .note {
+        color: #fff;
+        padding: 50px;
+    }
+
+    .note h1{
+        font-size: xx-large;
+    }
+
+    .note li{
+        font-size: larger;
+    }
+
+    .participate {
+        padding: 20px;
+        border-radius: 22px;
+        text-align: center;
+        float: left;
+        background-color: white;
+        position: absolute;
+        right: -75px;
+        top: 50px;
+        width: 500px;
+        overflow: hidden;
+    }
+
+    .participate h1 {
+        
+        top: 0%;
+        text-align: left;
+        font-size: xx-large;
+        color: #03a982
+    }
+
+
+    .participate p{
+        color: black;
+        text-align: left ;;
+    }
+
+    .participate img{
+        
+        float: right;
+        width: 200px;
+        height: 200px;
+        top: -50px;
+        right: 54px;
+    }
+</style>
+<body>
+    <!-- Main container -->
+    <div class="container"> 
+        <h1 style="color: rgb(80, 80, 254); font-weight: 100;">Calling All <span
+                style="font-weight: bold; color: rgb(5, 5, 106);">Aspiring Tech Writers!</span></h1>
+    <!--Content -->
+        <div class="content">
+            <div class="img">
+                <img src="images\note.jpeg" alt="notebook">
+            </div>
+            <div class="contest">
+                <h1>TECH WRITING CONTEST 2024</h1>
+                <h3> Organiozed by TECH<span>NEBUL</span></h3>
+            </div>
+            <div class="contest-content">
+                <p>Got a burning tech question or a groundbreaking
+                    solution? The Tech Writing Contest wants to hear
+                    it! Share your unique perspective in-depth
+                    analysis, practical guide, or bold op-eds and
+                    inspire the future of technology.
+                </p>
+            </div>
+        </div>
+
+    <!-- Idea -->
+
+        <div class="ideas">
+            <p>
+                Do you a mind buzzing with ideas about AI, data, the cloud, or even your own problem-solving
+                hacks? We've got categories for ALL that. <i>(and even your opinionated side !)</i>
+            </p>
+            <div class="idea-blocks" id="block-1">
+                <h2>GEN AI</h2>
+                <p>Crack the code on the next generation of artificial intelligence!</p>
+            </div>
+            <div class="idea-blocks" id="block-2">
+                <h2>AI/ML</h2>
+                <p>Dive deep into anything and everything under the vast umbrella of Artificial Intelligence and Machine
+                    Learning.</p>
+            </div>
+            <div class="idea-blocks" id="block-3">
+                <h2>DATA ANALYTICS GURU</h2>
+                <p>Show how you make sense of the ever-growing data jungle.</p>
+            </div>
+            <div class="idea-blocks" id="block-4">
+                <h2>CLOUD ENGINEERING MASTERMIND</h2>
+                <p>Got the cloud figured out? Spill the beans!</p>
+            </div>
+            <div class="idea-blocks" id="block-5">
+                <h2>PROBLEM-SOLVING SUPERHERO</h2>
+                <p>Share your unique framework for solving tech problems.</p>
+            </div>
+            <div class="idea-blocks" id="block-6">
+                <h2>OPINIONATED TECH VISIONARY</h2>
+                <p>Got a hot take on the future? Craft it here!</p>
+            </div>
+        </div>
+        <p>
+            This is your chance to turn on your tech knowledge into awesome content, reach a wider audience, and
+            <br>
+            win some sweet prize! so, what are you waiting for?
+        </p>
+
+    <!-- Chances -->
+
+        <div class="chances">
+            <div class="note">
+                <h1 style="text-align: left;">KEEP IN MIND WHILE WRITING</h1>
+                <ul>
+                    <li>
+                         Write about the groundbreaking technology solution, <br>
+                         that address current global challenges.
+                    </li>
+                         <p></p>
+                         
+                    <li>
+                         Share your vision of how technology will evole in <br>
+                         the next 10-20 years.
+                    </li>
+                         <p></p>
+                    <li>
+                         Discuss how technology impact daily life and its <br>
+                         potential to improve our routines.
+                    </li>
+                </ul>
+
+                <div class="participate">
+                    <img src="images\pencil.jpeg" alt="">
+                    <h1>WHO CAN <br> PARTICIPATE? </h1>
+
+                    <p>
+                        Open to the writes of all ages and levels 
+                        including students, professionals, and 
+                        tech enthusiasts worldwide
+
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- THE END -->
+</body>
+
+</html>
